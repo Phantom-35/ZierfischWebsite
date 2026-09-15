@@ -5,6 +5,7 @@
     --text: #24383b;
     --muted: #5e7072;
     --accent: #e9b949;
+    --link: #b47700;
 }
 
 * {
@@ -18,6 +19,12 @@ body {
     color: var(--text);
     font-family: Georgia, 'Times New Roman', serif;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 header {
@@ -98,6 +105,7 @@ main {
 
 #Siamesische-Kampffisch {
     padding: 0 0 20px;
+    margin-bottom: 60px;
 }
 
 .container-siam {
@@ -193,5 +201,30 @@ footer p {
     font-family: Arial, sans-serif;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
 
+table th,
+table td {
+    border: 1px solid var(--muted);
+    padding: 12px;
+    text-align: left;
+}
 
+table th {
+    background: var(--petrol);
+    color: #ffffff;
+}
+
+tbody a {
+    color: var(--link);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+tbody a:hover {
+    text-decoration: underline;
+}
