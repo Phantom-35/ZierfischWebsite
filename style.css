@@ -6,6 +6,8 @@
     --muted: #5e7072;
     --accent: #e9b949;
     --link: #b47700;
+    --videos: #d61515;
+    --box-aquarium: #eaf7ff;
 }
 
 * {
@@ -160,6 +162,58 @@ main {
     letter-spacing: 2px;
 }
 
+.care-tips {
+    padding: 0 0 30px;
+}
+
+.care-tips-inner {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 34px 30px 20px;
+    background: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 8px 25px rgba(16, 63, 69, 0.08);
+}
+
+.care-tips h2 {
+    margin: 0 0 22px;
+    text-align: center;
+    color: var(--petrol-dark);
+    font-size: 32px;
+}
+
+.care-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.care-grid article {
+    padding: 20px 18px;
+    background: var(--water);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+}
+
+.care-grid h3 {
+    margin: 0 0 10px;
+    color: var(--petrol);
+    font-size: 1.2rem;
+}
+
+.care-grid p {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--muted);
+}
+
+.care-grid article {
+    transition: all 0.3s ease;
+}
+
+.care-grid article:hover {
+    transform: translateX(5px);
+}
+
 .cta {
     display: flex;
     align-items: center;
@@ -227,4 +281,85 @@ tbody a {
 
 tbody a:hover {
     text-decoration: underline;
+}
+
+.video-gallery {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.video-container {
+    display: inline-block;
+    margin: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.video-container p {
+    margin: 10px 0;
+    color: var(--text);
+    font-family: Arial, sans-serif;
+}
+
+.video-container iframe {
+    border: 4px solid var(--petrol);
+}
+
+.aquarium-einrichten {
+    background: #eaf8ff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.aquarium-einrichten-oben {
+    padding: 60px 10px 28px;
+    text-align: center;
+}
+
+.aquarium-einrichten-oben h2 {
+    margin: 0 0 14px;
+    color: #0b5870;
+    font-size: 42px;
+    line-height: 1.1;
+}
+
+.aquarium-einrichten-oben p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #335d6c;
+    font-family: Arial, sans-serif;
+    font-size: 1.05rem;
+}
+
+.aquarium-einrichten-content {
+    display: grid;
+    gap: 20px;
+}
+
+.aquarium-einrichten-item {
+    padding: 20px 18px;
+    background: #d7f0ff;
+    border-left: 4px solid #0d6c8d;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.aquarium-einrichten-item:hover {
+    transform: translateX(5px);
+}
+
+.aquarium-einrichten-item h3 {
+    margin: 0 0 10px;
+    color: #0a3a4d;
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+}
+
+.aquarium-einrichten-item p {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #1a4e62;
 }
