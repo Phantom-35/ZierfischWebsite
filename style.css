@@ -56,6 +56,7 @@ header {
     color: var(--petrol-dark);
     font-size: 28px;
     line-height: 1.2;
+    text-decoration: none;
 }
 
 nav ul {
@@ -102,7 +103,7 @@ main {
     margin: 0 auto;
     color: var(--muted);
     font-family: Arial, sans-serif;
-    font-size: 1.05rem;
+    font-size: 19px;
 }
 
 #Siamesische-Kampffisch {
@@ -118,7 +119,12 @@ main {
     border-left: 6px solid var(--petrol);
     border-radius: 4px;
     box-shadow: 0 8px 25px rgba(16, 63, 69, 0.1);
+    transition: all 0.3s ease;
 }
+
+.container-siam:hover {
+    transform: translateX(5px);
+}   
 
 .siamese-bild {
     width: 400px;
@@ -346,10 +352,11 @@ tbody a:hover {
 }
 
 .aquarium-einrichten {
-    background: #eaf8ff;
+    background: #ffffff;
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 40px;
+    box-shadow: 0 8px 25px rgba(16, 63, 69, 0.08);
 }
 
 .aquarium-einrichten-oben {
@@ -402,6 +409,74 @@ tbody a:hover {
     color: #1a4e62;
 }
 
+.aquarium-einrichten-sec {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    margin-top: 70px;
+    box-shadow: 0 8px 25px rgba(16, 63, 69, 0.08);
+}
+
+.aquarium-einrichten-content-sec {
+    display: grid;
+    gap: 20px;
+}
+
+.aquarium-einrichten-item-sec {
+    padding: 20px 18px;
+    background: #ffcbcb;
+    border-left: 4px solid #8d0d0d;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.aquarium-einrichten-item-sec:hover {
+    transform: translateX(5px);
+}
+
+.aquarium-einrichten-item-sec h3 {
+    margin: 0 0 10px;
+    color: #0a3a4d;
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+}
+
+.aquarium-einrichten-item-sec p {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #1a4e62;
+}
+
+.aquarium-video {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+
+.aquarium-video-hero {
+    margin-bottom: 40px;
+}
+
+.aquarium-video-hero h2 {
+    font-size: 35px;
+    line-height: 1.1;
+    color: var(--petrol-dark)
+}
+
+.aquarium-video-hero p {
+    color: var(--muted);
+    font-family: Arial, sans-serif;
+    font-size: 19px;
+}
+
+.aquarium-video-content iframe {
+    border: 4px solid var(--petrol);
+    border-radius: 4px;
+}
+
 .impressum-content {
     max-width: 800px;
     margin: 0 auto;
@@ -436,10 +511,4 @@ tbody a:hover {
 .impressum-content .button {
     display: inline-block;
     margin-top: 5px;
-}
-
-@media (max-width: 700px) {
-    .impressum-content {
-        padding: 25px;
-    }
 }
