@@ -611,3 +611,15 @@ tbody a:hover {
     height: auto;
     width: 420px;
 }
+
+.produkte-section {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.produkte-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
