@@ -1,36 +1,89 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Süßwasserzierfische | Kontakt</title>
-    <link href="style.css" rel="stylesheet">
-</head>
-<body>
-    <header>
-      <div class="logo">
-        <img src="img/logo.jpeg" alt="Logo" />
-      </div>
-      <a href="index.html" class="header-h1">Süßwasserzierfische</a>
-      <nav>
-        <ul>
-          <li><a href="arten.html">Andere Arten</a></li>
-          <li><a href="videos.html">Videos</a></li>
-          <li><a href="aquarium.html">Aquarium</a></li>
-          <li><a href="pictures.html">Fotos</a></li>
-          <li><a href="produkte.html">Produkte</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <main>
-        <section class="hero">
-            <h2>Kontakt</h2>
-            <p>
-                Wir freuen uns über Ihre Fragen, Anregungen oder Feedback. 
-                Bitte nutzen Sie das untenstehende Kontaktformular, um uns zu erreichen.
-            </p>
-        </section>
-    </main>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Süßwasserzierfische | Kontakt</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/logo.jpeg" alt="Logo" />
+    </div>
+    <a href="index.html" class="header-h1">Süßwasserzierfische</a>
+    <nav>
+      <ul>
+        <li><a href="arten.html">Andere Arten</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="aquarium.html">Aquarium</a></li>
+        <li><a href="pictures.html">Fotos</a></li>
+        <li><a href="produkte.html">Produkte</a></li>
+        <li><a href="wasserpflanzen.html">Wasserpflanzen</a></li>
+        <li><a class="kontakt-link" href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Kontakt</h2>
+      <p>
+        Wir freuen uns über Ihre Fragen, Anregungen oder Feedback.
+        Bitte nutzen Sie das untenstehende Kontaktformular, um uns zu erreichen.
+      </p>
+    </section>
+
+    <section class="kontakt-bereich">
+      <form class="kontakt-formular" action="https://formspree.io/f/XXXXXXXXX" method="post" enctype="text/plain">
+        <div class="formular-feld">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="name" required>
+        </div>
+
+        <div class="formular-feld">
+          <label for="email">E-Mail</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </div>
+
+        <div class="formular-feld">
+          <label for="anliegen">Anliegen</label>
+          <textarea id="anliegen" name="anliegen" rows="7" required></textarea>
+        </div>
+
+        <label class="datenschutz-checkbox">
+          <input type="checkbox" name="datenschutz" required>
+          <span>Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen.</span>
+        </label>
+
+        <button type="submit" class="button">Nachricht senden</button>
+      </form>
+    </section>
+
+    <div class="alternative-kontakt">
+      <p>Alternativ können Sie uns auch per E-Mail unter 
+        <a href="mailto:phandevstudios@gmx.de">phandevstudios@gmx.de</a> kontaktieren.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inhalt">
+      <div>
+        <h3>Süßwasserzierfische</h3>
+        <p>Informationen rund um Zierfische und Aquarien.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="mailto:phandevstudios@gmx.de">Kontakt</a>
+      </div>
+    </div>
+
+    <p class="copyright">&copy; 2026 Ben Griese</p>
+  </footer>
 </body>
+
 </html>

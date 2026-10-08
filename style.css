@@ -61,6 +61,7 @@ header {
 
 nav ul {
     display: flex;
+    align-items: center;
     gap: 50px;
     margin: 0;
     padding: 0;
@@ -79,6 +80,25 @@ nav a {
 nav a:hover,
 nav a:focus-visible {
     color: #b47700;
+}
+
+.kontakt-link {
+    display: inline-block;
+    color: var(--water);
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: var(--petrol);
+    padding: 7px 14px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.kontakt-link:hover,
+.kontakt-link:focus-visible {
+    color: var(--water);
+    transform: translateY(-2px);
 }
 
 main {
@@ -276,6 +296,79 @@ main {
 
 .button:hover {
     background: var(--petrol-dark);
+}
+
+.kontakt-bereich {
+    text-align: center;
+    padding: 10px 20px 50px;
+}
+
+.kontakt-formular {
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 8px 18px rgba(21, 94, 99, 0.12);
+}
+
+.formular-feld {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.formular-feld label {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--petrol-dark);
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+}
+
+.formular-feld input,
+.formular-feld textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #b9cacc;
+    border-radius: 4px;
+    background: #ffffff;
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.formular-feld textarea {
+    resize: vertical;
+}
+
+.formular-feld input:focus,
+.formular-feld textarea:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+}
+
+.datenschutz-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 4px 0 22px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+.datenschutz-checkbox input {
+    margin-top: 5px;
+}
+
+.datenschutz-checkbox a {
+    color: var(--link);
+}
+
+.kontakt-formular .button {
+    border: 0;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 footer {
@@ -688,5 +781,22 @@ tbody a:hover {
 
 .produkt-card a:hover {
     background-color: var(--petrol-dark);
+    transform: translateY(-2px);
+}
+
+.alternative-kontakt {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+}
+
+.alternative-kontakt a {
+    color: var(--link);
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.alternative-kontakt a:hover {
     transform: translateY(-2px);
 }
